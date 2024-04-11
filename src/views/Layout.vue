@@ -1,10 +1,12 @@
 <script setup>
-import Navbar from "../components/Navbar.vue";
+import AppSidebar from "../components/Sidebar/AppSidebar.vue";
 </script>
 
 <template>
-  <div class="container mx-auto">
-    <Navbar />
-    <router-view></router-view>
+  <div class="grid grid-cols-[auto, 1fr] max-w-7xl mx-auto">
+    <AppSidebar />
+    <main>
+      <router-view></router-view>
+    </main>
   </div>
 </template>
